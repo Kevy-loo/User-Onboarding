@@ -73,7 +73,7 @@ function App() {
       last_name: formValues.last_name.trim(),
       password: formValues.password.trim(),
       email: formValues.email.trim(),
-      tos:false
+      tos: ['tos'].filter((tos) => !!formValues[tos]),
 
 
 
